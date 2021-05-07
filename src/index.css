@@ -23,3 +23,62 @@ body {
   flex-wrap: wrap;
   margin: 10px 10px;
 }
+
+.PageNotFound {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.PageNotFound > img {
+  width: 300px;
+  box-shadow: 0px 5px 15px 2px rgb(112, 112, 112);
+}
+
+.fixedLinksSection {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.fixedLinks {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color:rgb(112, 112, 112);
+}
+
+.fixedLinks:after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.fixedLinks:hover {
+  color:rgb(33, 33, 33);
+}
+
+.fixedLinks:hover::after {
+  width: 100%;
+}
+
+.aboutBigParent {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.aboutBigParent p {
+  opacity: 0.6;
+  font-weight: 100;
+}
